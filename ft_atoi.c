@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 23:03:19 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/20 21:11:22 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/21 19:01:34 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ while (str[i] >= '0' && str[i] <= '9')
     return (0);
     if ((index >= 19) && (s == 1))
     return (-1);
+    
     d = d * 10 + str[i] - '0';
     index++;
     i++;
@@ -56,8 +57,8 @@ return(d * s);
 /*
 int main()
 {
-char str[] = "1234";
-    printf("%d",ft_atoi(str));
+char str[] = "9999999999999999999999999999";
+    printf("%d",atoi(str));
    
 }*/
 

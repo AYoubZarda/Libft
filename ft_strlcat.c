@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 15:34:05 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/19 19:15:30 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/21 18:56:32 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@ size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
     size_t    j;
     size_t    ds;
     size_t    ss;
+    
+if (!dst && !dstsize)
+return (0);
 
     i = 0;
     j = 0;

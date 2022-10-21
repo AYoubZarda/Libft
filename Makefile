@@ -6,7 +6,7 @@
 #    By: azarda <azarda@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 17:16:06 by azarda            #+#    #+#              #
-#    Updated: 2022/10/19 23:23:32 by azarda           ###   ########.fr        #
+#    Updated: 2022/10/21 16:50:06 by azarda           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ FILES = ft_memset \
 		ft_tolower \
 		ft_calloc \
 		ft_strdup \
-		# ft_substr \
+		ft_substr \
 		# ft_strjoin \
 		# ft_strtrim \
 		# ft_split \

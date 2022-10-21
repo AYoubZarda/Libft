@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 22:11:53 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/20 20:38:39 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/21 18:57:23 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 size_t i;
 size_t j;
 
+if (!haystack && !len)
+return (0);
 i = 0;
 
 if (needle[i] == '\0')
