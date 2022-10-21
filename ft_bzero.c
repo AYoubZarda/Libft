@@ -6,15 +6,15 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:54:59 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/18 17:21:11 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/21 20:19:14 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    ft_memset(s,0,n);
+	ft_memset (s, 0, n);
 }
 /*
 int main()
