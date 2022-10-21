@@ -6,19 +6,19 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 20:21:12 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/12 21:10:05 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/21 20:15:47 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (c >= 'a' && c <= 'z')
-    {
-       return(c -32);
-    }
-    return(c);   
+	if (c >= 'a' && c <= 'z')
+	{
+		return (c -32);
+	}
+	return (c);
 }
 /*int main()
 {

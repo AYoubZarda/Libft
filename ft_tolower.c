@@ -6,21 +6,21 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 21:00:27 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/12 21:08:55 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/21 20:11:23 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
- int    ft_tolower(int c)
- {
-    if (c >= 'A' && c <= 'Z')
-    {
-        return (c +32);
-    }
-    return(c);  
- }
- /*int main()
+int	ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (c +32);
+	}
+	return (c);
+}
+/*int main()
  {
     char s = '5';
     printf("%c",ft_tolower(s)); 

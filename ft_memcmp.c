@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 00:46:16 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/19 21:42:38 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/21 19:07:12 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     str2 = ((unsigned char *)s2);
     i = 0;
     if(!n)
-    return (0);
+    return (0); 
     while (str1[i] == str2[i] && i < n -1)
     {
-        i++;
+       i++;
     }
     return (str1[i] - str2[i]);
 }
