@@ -6,13 +6,13 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 00:02:38 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 00:06:55 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/26 00:54:52 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	ft_calcul(const char *s, char d)
+static	char	ft_calcul(const char *s, char d)
 {
 	int	i;
 	int	cont;
@@ -31,7 +31,7 @@ char	ft_calcul(const char *s, char d)
 	return (cont);
 }
 
-void	ft_free_(char **tab)
+static	void	ft_free_(char **tab)
 {
 	int	i;
 
@@ -41,7 +41,7 @@ void	ft_free_(char **tab)
 	free(tab);
 }
 
-char	**ft_my_split(char const *str, char d, int i, int j)
+static	char	**ft_my_split(char const *str, char d, int i, int j)
 {
 	char	**tab;
 	int		debut;
@@ -81,3 +81,15 @@ char	**ft_split(char const *st, char c)
 	tab = ft_my_split(st, c, i, j);
 	return (tab);
 }
+// int main()
+// {
+// 	int i = 0;
+// 	char d[] = "dgshfg jhvscbhadsc ahjgcbvaghsdc dhjbvdshc       ";
+// 	char **tab = ft_split(d , ' ');
+// 	while (tab[i])
+// 	{
+// 		printf("%s\n", tab[i]);
+// 		i++;
+// 	}
+// 	return 0;
+// }
