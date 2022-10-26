@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 23:10:34 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 01:12:11 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/26 17:42:35 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,17 @@
 char	*ft_strdup(const char *s1)
 {
 	char	*sr;
+	int		i;
 
-	if (! (sr = (char *)malloc(ft_strlen(s1) + 1)))
+	i = 0;
+	sr = (char *)malloc((ft_strlen(s1) + 1) * sizeof(char));
+	if (!sr)
 		return (NULL);
-	ft_memcpy(sr, s1, ft_strlen(s1)+1);
+	while (s1[i])
+	{
+		sr[i] = s1[i];
+		i++;
+	}
+	sr[i] = '\0';
 	return (sr);
 }
