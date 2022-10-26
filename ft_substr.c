@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:44:50 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/21 17:14:02 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/25 22:57:03 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_substr(char const *s, unsigned int start,size_t len)
         i++;
 
     }
-    str[j] = 0;
+    str[j] = '\0';
         return (str);
       
 }
