@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 18:18:52 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/23 13:06:07 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/26 18:03:30 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*c;
 	int		i;
 	int		j;
-	
+
 	a = (char *) s1;
 	b = (char *) s2;
 	if (!a)
