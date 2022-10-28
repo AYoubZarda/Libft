@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 01:43:29 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 16:56:55 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:05:09 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (ft_strlen(src));
 }
-/*
-int main()
-{
-	//char dst[20] = "";
-	//char src[20] = "";
-	//char dst1[20] = "";
-	//char src1[20] = "";
-printf ("%zu\n",ft_strlcpy(NULL,NULL,4));
-//printf ("%zu\n",strlcpy(NULL,NULL,4));
-
-return(0);
-}*/

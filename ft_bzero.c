@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:54:59 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/21 20:19:14 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:02:38 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,3 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset (s, 0, n);
 }
-/*
-int main()
-{
-  char str[] = "zarda";
-  ft_bzero(str,2);
- printf("%s\n", str);
- return(0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 00:02:38 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 00:54:52 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:04:49 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,15 +81,3 @@ char	**ft_split(char const *st, char c)
 	tab = ft_my_split(st, c, i, j);
 	return (tab);
 }
-// int main()
-// {
-// 	int i = 0;
-// 	char d[] = "dgshfg jhvscbhadsc ahjgcbvaghsdc dhjbvdshc       ";
-// 	char **tab = ft_split(d , ' ');
-// 	while (tab[i])
-// 	{
-// 		printf("%s\n", tab[i]);
-// 		i++;
-// 	}
-// 	return 0;
-// }

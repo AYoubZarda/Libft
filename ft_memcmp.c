@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 00:46:16 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 01:03:50 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:03:57 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,23 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (str1[i] - str2[i]);
 }
-/*
-int main()
-
-{
-
-	int s1[100]={4,7,8,4};
-	int s2[100]={4,7,3,9};
-	printf("%d\n",memcmp(s1,s2,16));
-	printf("%d\n",ft_memcmp(s1,s2,16));
-}
-
-{
-	
-
-	 int  s1 = 564\06;
-	 int  s2 = 6;
-	printf("%d\n",memcmp(s1,s2,4));
-	printf("%d\n",ft_memcmp(s1,s2,4));
-	 
-}*/

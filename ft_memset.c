@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 22:20:39 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/22 16:12:28 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:04:13 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-/*int main()
-{
- char str[] = "zarda";
- printf("%s",ft_memset(str, 's',3));
- return(0);
-}
-*/

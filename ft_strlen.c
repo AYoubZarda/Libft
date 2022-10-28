@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 18:55:44 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 01:04:17 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:05:15 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-/*int main()
-{
-	char a[]="zardvba";
-	printf("%lu", ft_strlen(a));
-}
-*/

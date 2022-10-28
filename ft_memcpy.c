@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 21:58:06 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 01:01:18 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:04:03 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*
-int main()
-{
-char str1[] = "abcdef";
-//char str[] = "123456";
-printf("%s\n",memcpy(str1 +2,str1,5));
-printf("%s\n",ft_memcpy(str1 +2,str1,5));
-}*/

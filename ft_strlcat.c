@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 15:34:05 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/27 01:21:06 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:05:04 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	}
 	return (ss + size);
 }
-/*
-	size_t main()
-{
-	char str[20] = "zardaayoub";
-	char str1[] = "ayoub";
-printf ("%zu\n",ft_strlcat(str,str1,20));
-printf ("%s" , str);
-return(0);
-}*/

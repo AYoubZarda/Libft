@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 23:51:05 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 17:45:24 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:05:32 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
-/*
-int main()
-{
-	char s[] = "aaaaaabbbbbbbcccccc";
-	int c = 'a' + 256;
-	printf("%s\n",ft_strrchr(s,c));
-	printf("%s",strrchr(s,c));
-
-}
-*/

@@ -6,13 +6,13 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 18:05:29 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/27 00:35:16 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:03:21 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_get_size(int n)
+static int	ft_get_size(int n)
 {
 	int	c;
 

@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 20:21:12 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/21 20:15:47 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:05:41 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*int main()
-{
-    char s = '-';
-    printf("%c",ft_toupper(s));
-}
-*/

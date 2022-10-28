@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 21:00:27 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/21 20:11:23 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:05:38 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-/*int main()
- {
-    char s = '5';
-    printf("%c",ft_tolower(s)); 
- }
- */
