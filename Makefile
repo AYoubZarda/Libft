@@ -6,13 +6,13 @@
 #    By: azarda <azarda@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 17:16:06 by azarda            #+#    #+#              #
-#    Updated: 2022/10/28 17:08:13 by azarda           ###   ########.fr        #
+#    Updated: 2022/10/28 18:32:19 by azarda           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -f
@@ -51,9 +51,6 @@ FILES = ft_memset \
 		ft_putstr_fd \
 		ft_putendl_fd \
 		ft_putnbr_fd \
-		# ft_strtok \
-		# ft_strcmp \
-		# get_next_line \
 
 # FILES_B = 	ft_lstnew \
 # 	  		ft_lstadd_front \

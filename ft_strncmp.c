@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 01:22:55 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/28 18:05:21 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 18:06:57 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	i++;
 	return ((unsigned char)(s1[i]) - (unsigned char)(s2[i]));
 }
-
