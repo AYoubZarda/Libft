@@ -6,7 +6,7 @@
 #    By: azarda <azarda@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 17:16:06 by azarda            #+#    #+#              #
-#    Updated: 2022/10/28 14:15:29 by azarda           ###   ########.fr        #
+#    Updated: 2022/10/28 15:07:30 by azarda           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,8 @@ FILES = ft_memset \
 		ft_split \
 		ft_itoa \
 		ft_strmapi \
-		# ft_putchar_fd \
+		ft_striteri \
+		ft_putchar_fd \
 		# ft_putstr_fd \
 		# ft_putendl_fd \
 		# ft_putnbr_fd \

@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:17:21 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/28 14:27:37 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 15:07:15 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char d);
 char	*ft_itoa(int nbr);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_putchar_fd(char c, int fd);
 #endif
