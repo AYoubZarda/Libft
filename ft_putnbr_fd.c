@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 15:45:49 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/28 17:11:39 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/28 17:21:22 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int	rst;
-	long	nbr;
+	int			rst;
+	long int	nbr;
 
 	nbr = n;
 	if (nbr < 0)
