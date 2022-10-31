@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:44:50 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 18:01:48 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/31 15:43:34 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	j = 0;
-	str = (char *)malloc(sizeof(*s) * (len +1));
+	str = (char *)malloc(sizeof(*s) * (len + 1));
 	if (!str || !s)
 		return (NULL);
 	while (s[i])

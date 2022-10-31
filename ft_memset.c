@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 22:20:39 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/28 18:07:09 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/30 21:18:24 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	i = 0;
 	while (i < len)
 	{
-		((char *)b)[i] = (unsigned char) c;
+		((unsigned char *)b)[i] = (unsigned char) c;
 		i++;
 	}
 	return (b);

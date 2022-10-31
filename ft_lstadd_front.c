@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/08 01:43:29 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/31 14:34:57 by azarda           ###   ########.fr       */
+/*   Created: 2022/10/29 17:21:27 by azarda            #+#    #+#             */
+/*   Updated: 2022/10/31 15:39:16 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	size_t	i;
-
-	i = 0;
-	if (dstsize != 0)
+	if (lst)
 	{
-		i = 0;
-		while (src[i] && i < dstsize - 1)
+		if (*lst == NULL)
+			*lst = new;
+		else
 		{
-			dst[i] = src[i];
-			i++;
+			new->next = *lst;
+			*lst = new;
 		}
-		dst[i] = '\0';
 	}
-	return (ft_strlen(src));
 }

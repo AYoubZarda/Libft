@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 23:03:19 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/28 18:06:46 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/31 15:36:27 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *str)
 {
 	int		s;
-	long	d;
+	int		d;
 
 s = 1;
 d = 0;
@@ -29,12 +29,8 @@ d = 0;
 	}
 	while (ft_isdigit(*str))
 	{
-		if ((d > d * 10 + *str - '0') && (s == -1))
-			return (0);
-		if ((d > d * 10 + *str - '0') && (s == 1))
-			return (-1);
 			d = d * 10 + *str - '0';
 			str++;
 	}
-	return ((int)d * s);
+	return (d * s);
 }
