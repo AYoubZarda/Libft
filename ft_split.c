@@ -6,13 +6,13 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 00:02:38 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/28 18:04:49 by azarda           ###   ########.fr       */
+/*   Updated: 2022/10/31 21:21:41 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	char	ft_calcul(const char *s, char d)
+static	int	ft_calcul(const char *s, char d)
 {
 	int	i;
 	int	cont;
