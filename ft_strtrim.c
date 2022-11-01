@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 19:01:27 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/26 20:51:24 by azarda           ###   ########.fr       */
+/*   Updated: 2022/11/01 16:16:13 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,18 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	j;
+	size_t	len;
 
 	i = 0;
-	if (!s1 || !set)
-		return (0);
-	j = ft_strlen((char *)s1);
-	while (i < j && ft_strchr(set, s1[i]))
+	if (!s1)
+		return (NULL);
+	if (!set || *set == '\0')
+		return (ft_strdup(s1));
+	while (ft_strchr(set, s1[i]) && s1[i] != '\0')
 		i++;
-	if (i == j)
-		return (ft_strdup(""));
-	while (j >= 0 && ft_strrchr(set, s1[j]))
+	j = ft_strlen(s1) - 1;
+	while (ft_strchr(set, s1[j]) && j != 0 && j >= i)
 		j--;
-	return (ft_substr(s1, i, (j - i + 1)));
+	len = j - i + 1;
+	return (ft_substr(s1, i, len));
 }
