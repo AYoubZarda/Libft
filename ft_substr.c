@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 14:44:50 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/31 15:43:34 by azarda           ###   ########.fr       */
+/*   Updated: 2022/11/01 15:46:54 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,23 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	j = 0;
-	str = (char *)malloc(sizeof(*s) * (len + 1));
-	if (!str || !s)
+	if (!s)
+		return (NULL);
+	if (start > ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s) - start + 1)
+		len = ft_strlen(s) - start + 1;
+	str = malloc(sizeof(char) * (len + 1));
+	if (!str)
 		return (NULL);
 	while (s[i])
 	{
 		if (i >= start && j < len)
 		{
-		str[j] = s[i];
+			str[j] = s[i];
 			j++;
 		}
 		i++;
 	}
-	str[j] = '\0';
-	return (str);
+	return (str[j] = '\0', str);
 }
