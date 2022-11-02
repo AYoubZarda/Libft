@@ -6,7 +6,7 @@
 #    By: azarda <azarda@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/18 17:16:06 by azarda            #+#    #+#              #
-#    Updated: 2022/10/31 20:48:53 by azarda           ###   ########.fr        #
+#    Updated: 2022/11/02 13:34:08 by azarda           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,14 +25,11 @@ SRC = ft_isdigit.c ft_memset.c  ft_isprint.c ft_putendl_fd.c ft_itoa.c ft_strmap
 		ft_tolower.c  ft_strlen.c ft_putstr_fd.c ft_strlcat.c ft_calloc.c ft_strtrim.c \
 		ft_toupper.c ft_isalnum.c ft_strrchr.c  ft_strlcpy.c ft_memcmp.c ft_split.c \
 		ft_isalpha.c ft_memcpy.c ft_strchr.c  ft_putnbr_fd.c ft_strnstr.c ft_strjoin.c \
-		ft_isascii.c ft_memmove.c ft_isascii.c ft_strchr.c ft_strdup.c ft_substr.c \
+		ft_isascii.c ft_memmove.c ft_isascii.c ft_strchr.c ft_strdup.c ft_substr.c 
 
 OBJS = $(SRC:.c=.o)
 
-SRC_BONUS = ft_lstadd_front.c ft_lstnew.c 
-			
 
-OBJS_BONUS = $(SRC_BONUS:.c=.o)
 
 all:$(NAME)
 
@@ -40,15 +37,14 @@ $(NAME): $(OBJS)
 	$(ARC) $(NAME) $(OBJS)
 
 clean:
-	rm -f $(OBJS) $(OBJS_BONUS)
+	rm -f $(OBJS) 
 
 %.o : %.c	$(LIBRARY)
 	$(CC) $(CFLAGS) -c $<
 	
-bonus : $(OBJS_BONUS)
-		$(ARC) $(NAME) $(OBJS_BONUS)
+
 
 fclean: clean
 	rm -f $(NAME)
 
-re : fclean all bonus
+re : fclean all

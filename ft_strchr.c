@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 19:24:15 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/28 18:04:54 by azarda           ###   ########.fr       */
+/*   Updated: 2022/11/02 14:31:57 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,15 @@
 char	*ft_strchr(const char *s, int c)
 {
 	char	*d;
-	int		i;
+	size_t	i;
+	size_t	len;
 
-	i = 0;
 	d = (char *)s;
+	len = ft_strlen(d);
 	if ((char)c == '\0')
-		return (d + ft_strlen(d));
-	while (d[i] != '\0')
+		return (d + len);
+	i = 0;
+	while (i < len)
 	{
 		if (d[i] == (char)c)
 			return (&d[i]);
