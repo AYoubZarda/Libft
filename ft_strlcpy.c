@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 01:43:29 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/31 14:34:57 by azarda           ###   ########.fr       */
+/*   Updated: 2022/11/05 12:51:46 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
-	i = 0;
 	if (dstsize != 0)
 	{
 		i = 0;
