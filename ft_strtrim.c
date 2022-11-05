@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 19:01:27 by azarda            #+#    #+#             */
-/*   Updated: 2022/11/02 15:28:39 by azarda           ###   ########.fr       */
+/*   Updated: 2022/11/05 21:40:52 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (ft_strdup(s1));
 	while (ft_strchr(set, s1[i]) && s1[i] != '\0')
 		i++;
-	j = ft_strlen(s1) - 1;
+	j = ft_strlen(s1);
 	while (ft_strchr(set, s1[j]) && j != 0 && j >= i)
 		j--;
 	len = j - i + 1;
