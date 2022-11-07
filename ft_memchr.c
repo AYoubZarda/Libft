@@ -6,7 +6,7 @@
 /*   By: azarda <azarda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 00:58:31 by azarda            #+#    #+#             */
-/*   Updated: 2022/10/30 21:19:28 by azarda           ###   ########.fr       */
+/*   Updated: 2022/11/07 10:28:31 by azarda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;
 
-str = (unsigned char *)s;
+	str = (unsigned char *)s;
 	while (n)
 	{
 		if (*str == (unsigned char)c)
